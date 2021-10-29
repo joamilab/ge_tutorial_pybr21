@@ -1,0 +1,1611 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "nomes_africanos_1.csv",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "nomes_africanos"
+    },
+    "batch_markers": {
+      "ge_load_time": "20211016T201015.906669Z",
+      "pandas_data_fingerprint": "c513dc8cc8b5f3ba2c352dd1087900ca"
+    },
+    "batch_spec": {
+      "path": "/home/joamila/\u00c1rea de Trabalho/tutorial_pybr/great_expectations/../data/nomes_africanos_1.csv"
+    },
+    "expectation_suite_name": "nomes1",
+    "great_expectations_version": "0.13.37",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2021-10-16T17:10:15.885468+00:00"
+    },
+    "validation_time": "20211016T201016.019919Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column_list": [
+            "ID",
+            "Voyage ID",
+            "Name",
+            "Sexage",
+            "Age",
+            "Height (in)",
+            "Ship name",
+            "Arrival",
+            "Disembarkation",
+            "Embarkation",
+            "Country of Origin"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "ID",
+          "Voyage ID",
+          "Name",
+          "Sexage",
+          "Age",
+          "Height (in)",
+          "Ship name",
+          "Arrival",
+          "Disembarkation",
+          "Embarkation",
+          "Country of Origin"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "ID",
+          "max_value": 1,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "ID",
+          "max_value": 199932,
+          "min_value": 199932
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 199932
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "ID",
+          "mostly": 0.95
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "ID",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "ID",
+          "type_list": [
+            "INTEGER",
+            "integer",
+            "int",
+            "int_",
+            "int8",
+            "int16",
+            "int32",
+            "int64",
+            "uint8",
+            "uint16",
+            "uint32",
+            "uint64",
+            "INT",
+            "INTEGER",
+            "INT64",
+            "TINYINT",
+            "BYTEINT",
+            "SMALLINT",
+            "BIGINT",
+            "IntegerType",
+            "LongType"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "int64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Voyage ID",
+          "max_value": 557,
+          "min_value": 557
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 557
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Voyage ID",
+          "max_value": 500082,
+          "min_value": 500082
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 500082
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Voyage ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Voyage ID",
+          "max_value": 0.010645972237402995,
+          "min_value": 0.010645972237402995
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.010645972237402995
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Voyage ID",
+          "type_list": [
+            "INTEGER",
+            "integer",
+            "int",
+            "int_",
+            "int8",
+            "int16",
+            "int32",
+            "int64",
+            "uint8",
+            "uint16",
+            "uint32",
+            "uint64",
+            "INT",
+            "INTEGER",
+            "INT64",
+            "TINYINT",
+            "BYTEINT",
+            "SMALLINT",
+            "BIGINT",
+            "IntegerType",
+            "LongType"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "int64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Name"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Name",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_value_lengths_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Name",
+          "max_value": null,
+          "min_value": 2
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Sexage",
+          "value_set": [
+            " ",
+            "Boy",
+            "Girl",
+            "Man",
+            "Woman"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Sexage"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Sexage",
+          "max_value": 0.00010930156301235107,
+          "min_value": 0.00010930156301235107
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.00010930156301235107
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Sexage",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Age",
+          "value_set": [
+            " ",
+            "0.5",
+            "0.6",
+            "0.8",
+            "0.9",
+            "1",
+            "1.5",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "2.5",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "3",
+            "3.5",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "4",
+            "4.5",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "5",
+            "5.5",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "6",
+            "60",
+            "63",
+            "66",
+            "7",
+            "70",
+            "77",
+            "8",
+            "9"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Age",
+          "max_value": 0.001617663132582796,
+          "min_value": 0.001617663132582796
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.001617663132582796
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Age",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Height (in)",
+          "value_set": [
+            " ",
+            "0",
+            "12",
+            "12.5",
+            "13",
+            "13.5",
+            "14",
+            "16",
+            "17",
+            "18",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "28.5",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "36.5",
+            "37",
+            "37.5",
+            "38",
+            "39",
+            "39.5",
+            "39.75",
+            "40",
+            "40.25",
+            "41",
+            "41.5",
+            "41.75",
+            "42",
+            "42.5",
+            "43",
+            "43.25",
+            "43.5",
+            "43.75",
+            "44",
+            "44.25",
+            "44.5",
+            "44.75",
+            "45",
+            "45.25",
+            "45.5",
+            "45.75",
+            "46",
+            "46.25",
+            "46.5",
+            "46.75",
+            "47",
+            "47.25",
+            "47.5",
+            "47.75",
+            "48",
+            "48.25",
+            "48.5",
+            "48.75",
+            "49",
+            "49.25",
+            "49.5",
+            "49.75",
+            "50",
+            "50.25",
+            "50.5",
+            "50.75",
+            "51",
+            "51.25",
+            "51.5",
+            "51.75",
+            "52",
+            "52.25",
+            "52.5",
+            "52.75",
+            "53",
+            "53.25",
+            "53.5",
+            "53.75",
+            "54",
+            "54.25",
+            "54.5",
+            "54.75",
+            "55",
+            "55.25",
+            "55.5",
+            "55.75",
+            "56",
+            "56.25",
+            "56.5",
+            "56.75",
+            "57",
+            "57.25",
+            "57.5",
+            "57.75",
+            "58",
+            "58.25",
+            "58.5",
+            "58.75",
+            "59",
+            "59.25",
+            "59.5",
+            "59.75",
+            "60",
+            "60.25",
+            "60.5",
+            "60.75",
+            "61",
+            "61.25",
+            "61.5",
+            "61.75",
+            "62",
+            "62.25",
+            "62.4",
+            "62.5",
+            "62.55",
+            "62.75",
+            "63",
+            "63.25",
+            "63.5",
+            "63.75",
+            "64",
+            "64.25",
+            "64.4",
+            "64.5",
+            "64.6",
+            "64.75",
+            "65",
+            "65.25",
+            "65.5",
+            "65.75",
+            "66",
+            "66.25",
+            "66.5",
+            "66.75",
+            "67",
+            "67.25",
+            "67.5",
+            "67.75",
+            "68",
+            "68.25",
+            "68.5",
+            "68.75",
+            "69",
+            "69.25",
+            "69.5",
+            "69.75",
+            "70",
+            "70.25",
+            "70.5",
+            "70.75",
+            "71",
+            "71.25",
+            "71.5",
+            "71.75",
+            "72",
+            "72.25",
+            "72.5",
+            "73",
+            "74",
+            "74.5",
+            "75",
+            "76",
+            "76.5",
+            "77",
+            "78",
+            "79",
+            "81",
+            "81.5",
+            "82.25",
+            "82.5"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 775,
+        "missing_percent": 1.6941742266914417,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Height (in)",
+          "mostly": 0.98
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [
+          {
+            "count": 20,
+            "value": null
+          }
+        ],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_count": 775,
+        "unexpected_percent": 1.6941742266914417
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Height (in)",
+          "max_value": 0.003958194351790082,
+          "min_value": 0.003958194351790082
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.003958194351790082
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Height (in)",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 775,
+        "missing_percent": 1.6941742266914417,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Country of Origin",
+          "value_set": [
+            " ",
+            "Aba",
+            "Abang",
+            "Abassa",
+            "Aboh",
+            "Aboomi",
+            "Abou",
+            "Abuah",
+            "Accouder",
+            "Ackoo, Acou, Accoo, Occoo, Achu",
+            "Acon, Acan",
+            "Acow",
+            "Addo",
+            "Adorah",
+            "Alogah",
+            "Apam",
+            "Aragoni",
+            "Arara",
+            "Arara Magin",
+            "Arara cuatro ojos (4 eyes)",
+            "Aroli",
+            "Arpongo",
+            "Asaquah, Asacah",
+            "Assasiu",
+            "Assibicey",
+            "Atiam",
+            "Atloh",
+            "Attah",
+            "Baeho",
+            "Balanlah",
+            "Balanta",
+            "Bam, Bami",
+            "Bambarra, Bambana",
+            "Bamboy",
+            "Bamica",
+            "Barbah",
+            "Beriba, Beraba",
+            "Bessy",
+            "Bijogas",
+            "Bijuco",
+            "Billola",
+            "Bissao",
+            "Bola",
+            "Bommau",
+            "Bommay",
+            "Boyboyhat",
+            "Buche",
+            "Bujuka",
+            "Bumnanee",
+            "Cacheo",
+            "Calabal",
+            "Calabar",
+            "Camjda",
+            "Camo",
+            "Carabali Achena",
+            "Carabali Apa",
+            "Carabali Apapa",
+            "Carabali Asa",
+            "Carabali Atane",
+            "Carabali Bane",
+            "Carabali Banfule",
+            "Carabali Basa",
+            "Carabali Bo",
+            "Carabali Brican",
+            "Carabali Camaron",
+            "Carabali Cicuato",
+            "Carabali Cuella",
+            "Carabali Cunacuna",
+            "Carabali Doque",
+            "Carabali Duni",
+            "Carabali Echi",
+            "Carabali Eculasu",
+            "Carabali Elugo",
+            "Carabali Epa",
+            "Carabali Esa",
+            "Carabali Esala",
+            "Carabali Ibibi",
+            "Carabali Ibo",
+            "Carabali Isa",
+            "Carabali Isuamo",
+            "Carabali Itepu",
+            "Carabali Mogo",
+            "Carabali Niconecha",
+            "Carabali Omuma",
+            "Carabali Onecha",
+            "Carabali Oru",
+            "Carabali Ososo",
+            "Carabali Otan",
+            "Carabali Ovende",
+            "Carabali Papa",
+            "Carabali Papa Bricamo",
+            "Carabali Suamo",
+            "Carabali Ubanaca",
+            "Carabali Ubani",
+            "Carabali Ugu",
+            "Carabali Ugua",
+            "Carabali Ungua",
+            "Carabali Vende",
+            "Carabali Vivi",
+            "Carabali induri",
+            "Congo",
+            "Congo Baca",
+            "Congo Baco",
+            "Congo Bafo",
+            "Congo Bangola",
+            "Congo Bencha",
+            "Congo Biabo",
+            "Congo Bimgo",
+            "Congo Binda",
+            "Congo Binga",
+            "Congo Boma",
+            "Congo Bomgoma",
+            "Congo Bongo",
+            "Congo Borida",
+            "Congo Buchimpe",
+            "Congo Buco",
+            "Congo Buere",
+            "Congo Bullonde",
+            "Congo Camba",
+            "Congo Cango",
+            "Congo Cansa",
+            "Congo Chocho",
+            "Congo Cocumbe",
+            "Congo Cumi",
+            "Congo Cuno",
+            "Congo Cutuide",
+            "Congo Damba",
+            "Congo Danval",
+            "Congo Decolo",
+            "Congo Enchi",
+            "Congo Ensumga",
+            "Congo Fete",
+            "Congo Fula",
+            "Congo Ganga",
+            "Congo Gimse",
+            "Congo Ginga",
+            "Congo Guembo",
+            "Congo Lano",
+            "Congo Lemba",
+            "Congo Leque",
+            "Congo Llango",
+            "Congo Lotala",
+            "Congo Luango",
+            "Congo Lumbi",
+            "Congo Lungo",
+            "Congo Lusanda",
+            "Congo Matendi",
+            "Congo Melele",
+            "Congo Mesa",
+            "Congo Moache",
+            "Congo Moamba",
+            "Congo Moboma",
+            "Congo Mondongo",
+            "Congo Mongoma",
+            "Congo Monlaso",
+            "Congo Mopaco",
+            "Congo Moyombe",
+            "Congo Moyoni",
+            "Congo Muedi",
+            "Congo Mullombe",
+            "Congo Mumba",
+            "Congo Musimba",
+            "Congo Musundi",
+            "Congo Niense",
+            "Congo Ocama",
+            "Congo Pesa",
+            "Congo Puya",
+            "Congo Queta",
+            "Congo Quiama",
+            "Congo Quisadonga",
+            "Congo Real",
+            "Congo Sacala",
+            "Congo Sande",
+            "Congo Sasa",
+            "Congo Say",
+            "Congo Simba",
+            "Congo Solon",
+            "Congo Sombo",
+            "Congo Sozo",
+            "Congo Suca",
+            "Congo Sucuti",
+            "Congo Tamba",
+            "Congo Tando",
+            "Congo Tibo",
+            "Congo Totela",
+            "Conia",
+            "Corsos",
+            "Cota",
+            "Cromatee",
+            "Crue",
+            "Crue and Tradetown",
+            "Cuttoo",
+            "Dagtola",
+            "De Beias",
+            "Duncama",
+            "Eboo, Hebo",
+            "Ecoo",
+            "Fai",
+            "Footajalla",
+            "Forma",
+            "Foulah",
+            "Gachoo",
+            "Gachor",
+            "Ganga",
+            "Ganga Bahi",
+            "Ganga Bere",
+            "Ganga Bumi",
+            "Ganga Cono",
+            "Ganga Enani",
+            "Ganga Fai",
+            "Ganga Guizu",
+            "Ganga Jula",
+            "Ganga Mani",
+            "Ganga Togoma",
+            "Ganga longova",
+            "Garag, Geerah",
+            "Garboo",
+            "Geehor",
+            "Goncan",
+            "Googa",
+            "Gora",
+            "Harwarsor",
+            "Hausa, Hoosa, Houssa",
+            "Hbah, Bah",
+            "Hechoo",
+            "Hecoo",
+            "Heesemah",
+            "Heihohee",
+            "Hemsheir",
+            "Hidebrook",
+            "Hocannah",
+            "Homee",
+            "Honton",
+            "Hotna",
+            "Ibibi",
+            "Igana",
+            "Illahruh",
+            "Iniha",
+            "Inlosah",
+            "Jeboli",
+            "Kissry",
+            "Kuaboo",
+            "Kukundy",
+            "Laako",
+            "Laban",
+            "Labardo",
+            "Labera",
+            "Lacobo",
+            "Laiday",
+            "Lalla",
+            "Lama",
+            "Larno",
+            "Latte",
+            "Lauh",
+            "Leebee",
+            "Leehibo",
+            "Legabi",
+            "Lidibale",
+            "Lidy",
+            "Limba",
+            "Lingeu",
+            "Loco",
+            "Logo",
+            "Long",
+            "Lougee",
+            "Lucumi",
+            "Lucumi Aguia",
+            "Lucumi Agusa",
+            "Lucumi Arara",
+            "Lucumi Basa",
+            "Lucumi Cacanda",
+            "Lucumi Chamba",
+            "Lucumi Daguame",
+            "Lucumi Eba",
+            "Lucumi Ecua",
+            "Lucumi Ecumacho",
+            "Lucumi Ello",
+            "Lucumi Ibra",
+            "Lucumi Igara",
+            "Lucumi Jausa",
+            "Lucumi Lafia",
+            "Lucumi Layi",
+            "Lucumi Llabu",
+            "Lucumi Opu",
+            "Lucumi Ota",
+            "Lucumi Pore",
+            "Lucumi Sabe",
+            "Lucumi Tapa",
+            "Lucumi Vacuo",
+            "Luhochorn",
+            "Magin",
+            "Mago Arara",
+            "Malago",
+            "Mandinga",
+            "Mandinga Baga",
+            "Mandinga Banbara",
+            "Mandinga Comiaca",
+            "Mandinga Cono",
+            "Mandinga Curango",
+            "Mandinga Ganga",
+            "Mandinga Limba",
+            "Mandinga Loco",
+            "Mandinga Logo",
+            "Mandinga Loso",
+            "Mandinga Mandinga",
+            "Mandinga Quisi",
+            "Mandinga Sangara",
+            "Mandinga Simine",
+            "Mandinga Sose",
+            "Mandinga Temene",
+            "Mandingo",
+            "Mania",
+            "Manna",
+            "Manyah",
+            "Massey",
+            "Mendinga Toma",
+            "Mina",
+            "Mina Janti",
+            "Mina Popo",
+            "Moko, Makol",
+            "Mombong",
+            "Nacho",
+            "Naloo",
+            "Necknee",
+            "Nesaree",
+            "Nupez",
+            "Obah",
+            "Obah, Aobah",
+            "Ofang",
+            "Ofeerao, Oferoa",
+            "Ogho",
+            "Papa",
+            "Raboli",
+            "Rapeu",
+            "Restuli",
+            "Robah, Roban",
+            "Rodigees",
+            "Saboo",
+            "Sagon",
+            "Sierra Leona",
+            "Soosoo",
+            "Tabab",
+            "Tabou",
+            "Take",
+            "Tappah",
+            "Tarquoh, Tarquoi, Tarquor",
+            "Terfelle",
+            "Timmanee",
+            "Toro",
+            "Tradetown",
+            "Unah",
+            "Wana",
+            "Yata",
+            "Yetsamez",
+            "Yetta"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 5,
+        "missing_percent": 0.010930156301235108,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Country of Origin",
+          "mostly": 0.99
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "partial_unexpected_counts": [
+          {
+            "count": 5,
+            "value": null
+          }
+        ],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_count": 5,
+        "unexpected_percent": 0.010930156301235108
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Country of Origin",
+          "max_value": 0.007761259291648448,
+          "min_value": 0.007761259291648448
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.007761259291648448
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "batch_id": "b0f958f67343983fa19ee2619481465c",
+          "column": "Country of Origin",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "VARCHAR",
+            "NVARCHAR",
+            "TEXT",
+            "NTEXT",
+            "STRING",
+            "StringType",
+            "string",
+            "str",
+            "object",
+            "dtype('O')"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 45745,
+        "missing_count": 5,
+        "missing_percent": 0.010930156301235108,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 30,
+    "success_percent": 100.0,
+    "successful_expectations": 30,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
